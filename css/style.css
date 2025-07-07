@@ -55,6 +55,56 @@ body {
   width: 100%;
 }
 
+.presentation {
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+  margin-bottom: 12rem;
+}
+.presentation figure {
+  display: flex;
+  width: 44.5rem;
+  height: 44.5rem;
+  flex-shrink: 0;
+}
+.presentation figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 999rem;
+}
+.presentation__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+.presentation__heading {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 4rem;
+  line-height: 130%;
+  font-weight: 700;
+  color: #030303;
+}
+
+.mywork {
+  margin-bottom: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+.mywork__heading {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 4rem;
+  line-height: 130%;
+  font-weight: 700;
+  color: #030303;
+}
+.mywork__buttons {
+  display: flex;
+  gap: 1.6rem;
+}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -80,6 +130,7 @@ body {
   text-decoration: none;
   padding: 1.6rem 4.8rem;
   border-radius: 999rem;
+  border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -104,6 +155,26 @@ body {
 .btn--red:focus-visible {
   outline: 0.2rem solid #e16b5b;
   outline-offset: 0.2rem;
+}
+.btn--arrow {
+  width: 6.4rem;
+  height: 6.4rem;
+  padding: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #030303;
+  color: #fff7f0;
+}
+.btn--arrow:hover {
+  background-color: #755cde;
+}
+.btn--arrow:focus-visible {
+  outline: 0.2rem solid #755cde;
+  outline-offset: 0.2rem;
+}
+.btn--arrow img {
+  height: 1.6rem;
 }
 
 .card {
@@ -160,6 +231,44 @@ body {
   grid-column: 5/-1;
   background-image: url(/assets/pattern-motion-graphics.svg);
   background-size: auto 6.4rem;
+}
+
+.slider {
+  height: 36rem;
+  width: 54rem;
+  position: relative;
+}
+.slider .slider__item {
+  width: 54rem;
+  border-radius: 0.8rem;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.book {
+  padding: 8rem 6.4rem;
+  background-color: #030303;
+  border-radius: 1rem;
+  color: #fff7f0;
+  display: grid;
+  grid-template-columns: 54rem auto;
+  gap: 2.4rem;
+}
+.book__heading {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 4rem;
+  line-height: 130%;
+  font-weight: 700;
+}
+.book__text {
+  grid-row: 2/3;
+}
+.book__btn {
+  grid-row: 1/3;
+  display: flex;
+  margin: auto 0 auto auto;
 }
 
 /*# sourceMappingURL=style.css.map */

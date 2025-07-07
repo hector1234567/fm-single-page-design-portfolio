@@ -1,0 +1,14 @@
+.slider {
+  height: 36rem;
+  width: 54rem;
+  position: relative;
+
+  .slider__item {
+    width: 54rem;
+    border-radius: 0.8rem;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+  }
+}

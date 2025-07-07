@@ -1,0 +1,34 @@
+@use "../base/typography" as t;
+@use "../base/colors" as c;
+
+.presentation {
+  display: flex;
+  align-items: center;
+  gap: 12.5rem;
+  margin-bottom: 12rem;
+
+  figure {
+    display: flex;
+    width: 44.5rem;
+    height: 44.5rem;
+    flex-shrink: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 999rem;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.2rem;
+  }
+
+  &__heading {
+    @include t.text-2;
+    color: c.$Neutral-900;
+  }
+}

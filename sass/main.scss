@@ -1,7 +1,11 @@
 @use "base/base";
 
 @use "layout/header";
+@use "layout/presentation";
+@use "layout/mywork";
 
 @use "components/navbar";
 @use "components/btn";
 @use "components/card";
+@use "components/slider";
+@use "components/book";
