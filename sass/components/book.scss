@@ -10,6 +10,7 @@
   display: grid;
   grid-template-columns: 54rem auto;
   gap: 2.4rem;
+  margin-bottom: 4.8rem;
 
   &__heading {
     @include t.text-2;
