@@ -1,0 +1,64 @@
+@use "../base/typography" as t;
+@use "../base/colors" as c;
+
+.card {
+  padding: 2.4rem;
+  border-radius: 0.8rem;
+
+  display: flex;
+  align-items: flex-end;
+
+  @include t.text-3;
+  color: c.$Neutral-0;
+
+  background-position: top 2.4rem right 2.4rem;
+  background-repeat: no-repeat;
+
+  &--1 {
+    background-color: c.$Galactic-Blue-500;
+    grid-row: 1/-1;
+    grid-column: 1/3;
+    background-image: url(/assets/pattern-graphic-design.svg);
+    background-size: auto 19.2rem;
+  }
+
+  &--2 {
+    background-color: c.$Summer-Yellow-500;
+    grid-row: 1/2;
+    grid-column: 3/4;
+    background-image: url(/assets/pattern-ui-ux.svg);
+    background-size: auto 6.4rem;
+  }
+
+  &--3 {
+    background-color: c.$Pink-500;
+    grid-row: 1/2;
+    grid-column: 4/5;
+    background-image: url(/assets/pattern-apps.svg);
+    background-size: auto 6.4rem;
+  }
+
+  &--4 {
+    background-color: c.$Pink-500;
+    grid-row: 1/2;
+    grid-column: 5/-1;
+    background-image: url(/assets/pattern-photography.svg);
+    background-size: auto 6.4rem;
+  }
+
+  &--5 {
+    background-color: c.$Light-Red-500;
+    grid-row: 2/3;
+    grid-column: 3/5;
+    background-image: url(/assets/pattern-illustrations.svg);
+    background-size: auto 6.4rem;
+  }
+
+  &--6 {
+    background-color: c.$Dark-Purple-500;
+    grid-row: 2/3;
+    grid-column: 5/-1;
+    background-image: url(/assets/pattern-motion-graphics.svg);
+    background-size: auto 6.4rem;
+  }
+}

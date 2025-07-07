@@ -1,3 +1,7 @@
-body {
-  background-color: red;
-}
+@use "base/base";
+
+@use "layout/header";
+
+@use "components/navbar";
+@use "components/btn";
+@use "components/card";

@@ -1,0 +1,28 @@
+@use "typography" as t;
+@use "colors" as c;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  @include t.text-4;
+  color: c.$Neutral-400;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 111rem;
+}

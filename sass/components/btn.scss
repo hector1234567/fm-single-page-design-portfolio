@@ -1,0 +1,41 @@
+@use "../base/typography" as t;
+@use "../base/colors" as c;
+
+.btn {
+  @include t.text-5;
+
+  text-decoration: none;
+  padding: 1.6rem 4.8rem;
+  border-radius: 999rem;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+
+  &--dark {
+    background-color: c.$Neutral-900;
+    color: c.$Neutral-200;
+
+    &:hover {
+      background-color: c.$Galactic-Blue-500;
+    }
+
+    &:focus-visible {
+      outline: 0.2rem solid c.$Galactic-Blue-500;
+      outline-offset: 0.2rem;
+    }
+  }
+
+  &--red {
+    background-color: c.$Light-Red-500;
+    color: c.$Neutral-200;
+
+    &:hover {
+      background-color: c.$Summer-Yellow-500;
+    }
+
+    &:focus-visible {
+      outline: 0.2rem solid c.$Light-Red-500;
+      outline-offset: 0.2rem;
+    }
+  }
+}

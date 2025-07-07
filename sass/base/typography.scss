@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap");
+
+$Medium: 400;
+$Bold: 700;
+
+@mixin text-1 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 5.6rem;
+  line-height: 130%;
+  font-weight: $Bold;
+}
+
+@mixin text-1-mobile {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 4rem;
+  line-height: 120%;
+  font-weight: $Bold;
+}
+
+@mixin text-2 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 4rem;
+  line-height: 130%;
+  font-weight: $Bold;
+}
+
+@mixin text-3 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 2.4rem;
+  line-height: 150%;
+  font-weight: $Bold;
+}
+
+@mixin text-4 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: $Medium;
+}
+
+@mixin text-5 {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: $Bold;
+}
