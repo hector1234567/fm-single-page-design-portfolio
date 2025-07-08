@@ -20,7 +20,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.2rem 0;
+  padding: 3.2rem;
+
+  @media (max-width: t.$tablet) {
+    padding: 2.4rem 3.2rem;
+  }
 }
 
 .container {
