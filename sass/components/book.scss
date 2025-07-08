@@ -19,9 +19,17 @@
     gap: 4rem;
   }
 
+  @media (max-width: t.$Mobile) {
+    padding: 4rem 1.6rem;
+  }
+
   &__heading {
     @include t.text-2;
     color: c.$Neutral-0;
+
+    @media (max-width: t.$Mobile) {
+      @include t.text-1;
+    }
   }
 
   &__text {

@@ -1,14 +1,30 @@
+@use "../base/typography" as t;
+
 .slider {
   height: 36rem;
   width: 54rem;
   position: relative;
+
+  @media (max-width: t.$Mobile) {
+    height: 18rem;
+    width: calc(100vw - 2 * 5.25rem);
+  }
 
   .slider__item {
     width: 54rem;
     border-radius: 0.8rem;
     height: 100%;
     position: absolute;
-    object-fit: cover;
     overflow: hidden;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    @media (max-width: t.$Mobile) {
+      width: calc(100vw - 2 * 5.25rem);
+    }
   }
 }

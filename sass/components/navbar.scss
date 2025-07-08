@@ -1,3 +1,5 @@
+@use "../base/typography" as t;
+
 .navbar {
   display: flex;
   align-items: center;
@@ -7,6 +9,10 @@
   &__logo {
     display: flex;
     height: 6.4rem;
+
+    @media (max-width: t.$Mobile) {
+      height: 5.2rem;
+    }
 
     img {
       width: 100%;

@@ -12,6 +12,10 @@
 
   transition: background-color 0.3s ease;
 
+  @media (max-width: t.$Mobile) {
+    padding: 1.2rem 2.4rem;
+  }
+
   &--dark {
     background-color: c.$Neutral-900;
     color: c.$Neutral-200;

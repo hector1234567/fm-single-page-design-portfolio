@@ -11,6 +11,10 @@
     margin-bottom: 8rem;
   }
 
+  @media (max-width: t.$Mobile) {
+    margin-bottom: 6.4rem;
+  }
+
   &__heading {
     @include t.text-1;
 
@@ -21,6 +25,10 @@
     @media (max-width: t.$tablet) {
       max-width: 53.8rem;
     }
+
+    @media (max-width: t.$Mobile) {
+      max-width: 34.3rem;
+    }
   }
 
   &__text {
@@ -30,6 +38,10 @@
 
     @media (max-width: t.$tablet) {
       margin-bottom: 6.4rem;
+    }
+
+    @media (max-width: t.$Mobile) {
+      margin-bottom: 4rem;
     }
   }
 
@@ -45,6 +57,11 @@
       grid-template-rows: repeat(3, 16.2rem);
       gap: 2rem;
     }
+
+    @media (max-width: t.$Mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 18.2rem);
+    }
   }
 
   .navbar {
@@ -52,6 +69,10 @@
 
     @media (max-width: t.$tablet) {
       margin-bottom: 6.4rem;
+    }
+
+    @media (max-width: t.$Mobile) {
+      margin-bottom: 4rem;
     }
   }
 }
