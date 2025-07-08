@@ -33,6 +33,12 @@ body {
   }
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container {
   width: 100%;
   max-width: 111rem;
@@ -179,15 +185,18 @@ body {
 }
 
 .mywork {
-  margin-bottom: 12rem;
+  margin-bottom: 11.6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4.8rem;
+  overflow: hidden;
+  width: 100vw;
+  padding-bottom: 0.4rem;
 }
 @media (max-width: 1100px) {
   .mywork {
-    margin-bottom: 8rem;
+    margin-bottom: 7.6rem;
   }
 }
 .mywork__heading {
@@ -397,6 +406,7 @@ body {
   height: 100%;
   position: absolute;
   overflow: hidden;
+  transition: all 0.3s ease-out;
 }
 .slider .slider__item img {
   height: 100%;
