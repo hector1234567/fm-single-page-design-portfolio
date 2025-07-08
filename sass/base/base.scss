@@ -16,6 +16,7 @@ html {
 body {
   @include t.text-4;
   color: c.$Neutral-400;
+  background-color: c.$Neutral-200;
 
   display: flex;
   flex-direction: column;
