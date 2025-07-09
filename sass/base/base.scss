@@ -21,14 +21,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.2rem;
+  padding: 3.2rem 0;
 
   @media (max-width: t.$tablet) {
-    padding: 2.4rem 3.2rem;
+    padding: 2.4rem 0;
   }
 
   @media (max-width: t.$Mobile) {
-    padding: 2.4rem 1.6rem;
+    padding: 2.4rem 0;
   }
 }
 
@@ -36,9 +36,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .container {
   width: 100%;
   max-width: 111rem;
+  padding: 0 3.2rem;
+
+  @media (max-width: t.$tablet) {
+    padding: 0 3.2rem;
+  }
+
+  @media (max-width: t.$Mobile) {
+    padding: 0 1.6rem;
+  }
 }
